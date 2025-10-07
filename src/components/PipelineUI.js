@@ -4,7 +4,7 @@ import { useStore } from '../store/pipelineStore';
 import PipelineToolbar from './PipelineToolbar';
 
 // Import all node types
-import InputNode from '../nodes/InputNode';
+import InputNode_temp from '../nodes/InputNode_temp';
 import OutputNode from '../nodes/OutputNode';
 import LLMNode from '../nodes/LLMNode';
 import TextNode from '../nodes/TextNode';
@@ -33,7 +33,7 @@ const PipelineUI = () => {
   } = useStore();
 
   const nodeTypes = useMemo(() => ({
-    input: InputNode,
+    input: InputNode_temp,
     output: OutputNode,
     llm: LLMNode,
     text: TextNode,
