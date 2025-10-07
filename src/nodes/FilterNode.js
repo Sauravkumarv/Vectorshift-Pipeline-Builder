@@ -1,6 +1,6 @@
 import { createNode } from '../utils/nodeFactory';
 import { nodeConfigs } from './nodeConfigs';
 
-const OutputNode = createNode('output', nodeConfigs.output);
+const FilterNode = createNode('filter', nodeConfigs.filter);
 
-export default OutputNode;
+export default FilterNode;

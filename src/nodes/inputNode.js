@@ -1,28 +1,6 @@
-import { useState } from 'react';
-import BaseNode from './BaseNode';
+import { createNode } from '../utils/nodeFactory';
+import { nodeConfigs } from './nodeConfigs';
 
-export const InputNode = ({ id, data }) => {
-  const [currName, setCurrName] = useState(data?.inputName || id.replace('customInput-', 'input_'));
-  const [inputType, setInputType] = useState(data.inputType || 'Text');
+const InputNode = createNode('input', nodeConfigs.input);
 
-  return (
-    <BaseNode
-      id={id}
-      title="Input Node"
-      borderColor="#10b981"
-      outputHandles={[{ id: 'value', top: '50%' }]}
-    >
-      <label>
-        Name:
-        <input type="text" value={currName} onChange={(e) => setCurrName(e.target.value)} />
-      </label>
-      <label>
-        Type:
-        <select value={inputType} onChange={(e) => setInputType(e.target.value)}>
-          <option value="Text">Text</option>
-          <option value="File">File</option>
-        </select>
-      </label>
-    </BaseNode>
-  );
-};
+export default InputNode;

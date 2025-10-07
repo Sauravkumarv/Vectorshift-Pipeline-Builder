@@ -1,6 +1,6 @@
 import { createNode } from '../utils/nodeFactory';
 import { nodeConfigs } from './nodeConfigs';
 
-const OutputNode = createNode('output', nodeConfigs.output);
+const DelayNode = createNode('delay', nodeConfigs.delay);
 
-export default OutputNode;
+export default DelayNode;

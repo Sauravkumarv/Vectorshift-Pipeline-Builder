@@ -1,16 +1,8 @@
-import { SubmitButton } from './components/submit';
-import { PipelineToolbar } from './toolbar';
-import { PipelineUI } from './ui';
-
+import React from 'react';
+import PipelineUI from './components/PipelineUI';
 
 function App() {
-  return (
-    <div>
-      <PipelineToolbar />
-      <PipelineUI />
-      <SubmitButton/>
-    </div>
-  );
+  return <PipelineUI />;
 }
 
 export default App;

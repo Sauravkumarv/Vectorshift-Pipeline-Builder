@@ -1,0 +1,43 @@
+/* ==================== GLOBAL STYLES ==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #020617;
+  color: #ffffff;
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #020617;
+}
+
+.pipeline-canvas {
+  flex: 1;
+  position: relative;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+  .toolbar-nodes {
+    gap: 8px;
+  }
+  
+  .draggable-node {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+  
+  .base-node {
+    min-width: 180px;
+  }
+}
